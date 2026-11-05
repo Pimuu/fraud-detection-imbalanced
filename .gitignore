@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+results_quick/
+# Full dataset is regenerated deterministically by the pipeline (~20 MB).
+data/transactions.csv
