@@ -1,0 +1,62 @@
+{
+  "seed": 42,
+  "quick": false,
+  "imblearn": true,
+  "data": {
+    "n_transactions": 234291,
+    "n_customers": 3000,
+    "n_fraud": 2343,
+    "fraud_rate": 0.010000384137674942,
+    "n_features": 29,
+    "fraud_by_scenario": {
+      "cnp_spree": 947,
+      "card_testing": 938,
+      "stolen_card": 280,
+      "mimic": 178
+    },
+    "splits": {
+      "train": {
+        "n": 140574,
+        "n_fraud": 1329,
+        "fraud_rate": 0.009454095351914294,
+        "day_from": 0.004934957239192017,
+        "day_to": 53.85388874141638
+      },
+      "val": {
+        "n": 46858,
+        "n_fraud": 427,
+        "fraud_rate": 0.009112638183447864,
+        "day_from": 53.85407357218851,
+        "day_to": 71.83243856560586
+      },
+      "test": {
+        "n": 46859,
+        "n_fraud": 587,
+        "fraud_rate": 0.01252694252971681,
+        "day_from": 71.83282682067919,
+        "day_to": 89.9967424094615
+      }
+    },
+    "median_amount": {
+      "0": 43.3,
+      "1": 63.08
+    },
+    "night_share": {
+      "0": 0.0512701122665425,
+      "1": 0.5830132309005548
+    },
+    "online_share": {
+      "0": 0.24530067084001586,
+      "1": 0.7904396073410158
+    },
+    "median_distance_km": {
+      "0": 6.25,
+      "1": 334.79
+    }
+  },
+  "best_config": {
+    "model": "hist_gb",
+    "strategy": "class_weight",
+    "pr_auc": 0.9120362924815256
+  }
+}

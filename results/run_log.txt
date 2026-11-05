@@ -1,0 +1,26 @@
+[07:01:12] imbalanced-learn available: True
+[07:01:16] data: 234,291 txns, fraud rate 1.000%, 29 features
+[07:01:49] logreg        none         PR-AUC=0.850 ROC-AUC=0.978 F1@0.5=0.768 F1@tuned=0.797 (0.4s)
+[07:02:33] logreg        class_weight PR-AUC=0.845 ROC-AUC=0.979 F1@0.5=0.449 F1@tuned=0.784 (0.8s)
+[07:03:15] logreg        random_under PR-AUC=0.844 ROC-AUC=0.979 F1@0.5=0.432 F1@tuned=0.776 (0.0s)
+[07:03:57] logreg        random_over  PR-AUC=0.844 ROC-AUC=0.979 F1@0.5=0.450 F1@tuned=0.774 (0.8s)
+[07:04:41] logreg        smote        PR-AUC=0.838 ROC-AUC=0.979 F1@0.5=0.419 F1@tuned=0.779 (0.8s)
+[07:05:22] random_forest none         PR-AUC=0.907 ROC-AUC=0.976 F1@0.5=0.870 F1@tuned=0.882 (16.9s)
+[07:06:05] random_forest class_weight PR-AUC=0.906 ROC-AUC=0.976 F1@0.5=0.886 F1@tuned=0.889 (8.9s)
+[07:06:44] random_forest random_under PR-AUC=0.891 ROC-AUC=0.982 F1@0.5=0.457 F1@tuned=0.849 (0.5s)
+[07:07:35] random_forest random_over  PR-AUC=0.904 ROC-AUC=0.968 F1@0.5=0.866 F1@tuned=0.886 (18.3s)
+[07:08:41] random_forest smote        PR-AUC=0.905 ROC-AUC=0.981 F1@0.5=0.876 F1@tuned=0.868 (30.5s)
+[07:09:15] hist_gb       none         PR-AUC=0.912 ROC-AUC=0.982 F1@0.5=0.873 F1@tuned=0.889 (2.8s)
+[07:10:05] hist_gb       class_weight PR-AUC=0.912 ROC-AUC=0.978 F1@0.5=0.897 F1@tuned=0.883 (7.8s)
+[07:10:47] hist_gb       random_under PR-AUC=0.897 ROC-AUC=0.981 F1@0.5=0.521 F1@tuned=0.861 (0.8s)
+[07:11:35] hist_gb       random_over  PR-AUC=0.909 ROC-AUC=0.979 F1@0.5=0.893 F1@tuned=0.886 (5.5s)
+[07:12:23] hist_gb       smote        PR-AUC=0.909 ROC-AUC=0.983 F1@0.5=0.885 F1@tuned=0.884 (5.6s)
+[07:12:35] ablation done for logreg
+[07:13:38] ablation done for hist_gb
+[07:13:38] best PR-AUC configuration: ('hist_gb', 'class_weight')
+[07:15:59] robustness seed 1 done
+[07:17:54] robustness seed 2 done
+[07:19:42] robustness seed 3 done
+[07:21:30] robustness seed 4 done
+[07:23:13] robustness seed 5 done
+[07:23:18] done — see results/
